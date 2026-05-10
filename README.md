@@ -6,18 +6,23 @@ El objetivo del proyecto es aplicar y demostrar conceptos fundamentales de comun
 El proyecto simula un entorno industrial donde un sensor remoto envía datos de temperatura a una estación de monitorización local (cliente c++), la cual procesa la información y lo guarda en un archivo de texto. El proyecto está diseño para que sea facíl de ejecutar a través de un script de automatización.  
 
 ## 2. Estructura del repositorio 
-''' text 
+```text
+.
 |--- src/
-|	|--- main.cpp		 	# Código fuente principal del cliente C++ 
+|		|--- main.cpp	# Código fuente principal del cliente C++ 
 |
-|	|--- Cliente_socket.ccp	 	# Implementación de la lógica de red (Sockets) 
-|  
-|	|---Cliente_socket.h		# Fichero de cabecera de ñas funciones de red
+|		|--- Cliente_socket.ccp	 	# Implementación de la lógica de red (Sockets) 
+|
+|		|--- Cliente_socket.h	# Fichero de cabecera de ñas funciones de red
+|
 |--- scripts/
-|	|--- ServidorCamara.py		# Servidor simulado en Python (camara térmica)
 |
-|       |--- ejecutar.sh		# Script de compilación y ejecución automatizada
-|-- README.md				
+|		|--- ServidorCamara.py	# Servidor simulado en Python (camara térmica)
+|
+|		|--- ejecutar.sh  # Script de compilación y ejecución automatizada
+|
+|--- README.md				
+
 
 ## 3. Requisistos del sistema
 * Sistema Operativo: **Linux** (probado en entorno Ubunto/WSL).
@@ -52,18 +57,26 @@ Para que el sistena de Sockets funcione, la arquitetura requiere que el servidor
 
 ## 7.Salida esperada
 Las terminales mostrarán lo siguiente:
-- En la terminal del servidor: 
+- En la terminal del servidor:
+  
 Servidor escuchando en 127.0.0.1:12345
+
 Conexión aceptada desde ('127.0.0.1', 56544)
+
 Array de datos enviado al cliente
 
 - En la terminal del Cliente:
 compilando...
 Compilacion completada. Ejecutando cliente...
+
 === INICIANDO CLIENTE DE TEMPERATURA ====
+
 Socket creado correctamente.
+
 conexión establecida con el servidor 
+
 Se han recibido 768 datos de temperatura correctamente.
+
 Datos guardados correctamente en el archivo: registro_temperatura.txt 
 
 Numeros de punto flotanta recibidos: 
