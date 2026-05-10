@@ -23,7 +23,7 @@ El proyecto simula un entorno industrial donde un sensor remoto envía datos de 
 |
 |--- README.md				
 
-
+```
 ## 3. Requisistos del sistema
 * Sistema Operativo: **Linux** (probado en entorno Ubunto/WSL).
 * Compilador: **g++** soporte para C++ estándar.
@@ -80,17 +80,23 @@ Se han recibido 768 datos de temperatura correctamente.
 Datos guardados correctamente en el archivo: registro_temperatura.txt 
 
 Numeros de punto flotanta recibidos: 
+
 0
+
 1
+
 2
+
 ...
 (listado hasta 225 repitiendose en bucle) 
+
 Conexión cerrada. Programa finalizado correctamente.
 
 ## 8.Depuración
 Si se necesita depurar el codigo C++, puedes compilarlo añadiendo en flag -g y utilizar gdb:
 
 **g++ -g main.cpp Cliente_socket.cpp -o cliente**
+
 **gdb ./cliente**
  
 
